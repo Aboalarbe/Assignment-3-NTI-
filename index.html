@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>The select Training algorithm</h2>
+<p>You can select the training algorithm from this list:</p>
+
+<form action="http://127.0.0.1:9000/train" method="get">
+  <select name="model_name">
+    <option value="lr">Logistic Regression</option>
+    <option value="svm">Support Vector Machine</option>
+    <option value="dt">Decision Tree</option>
+    <option value="knn">K-Nearest Neighbour</option>
+	<option value="nb">Naive Bayes</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Train">
+</form>
+
+<br><br>
+
+<form action="http://127.0.0.1:9000/predict" method="get">
+  __Total__:
+  <input type="text" name="total">
+  <br><br>
+  ___HP___:
+  <input type="text" name="hp">
+  <br><br>
+  __Attack_:
+  <input type="text" name="attack">
+  <br><br>
+  _Defense_:
+  <input type="text" name="defense">
+  <br><br>
+  __Sp.Atk_:
+  <input type="text" name="sp_atk">
+  <br><br>
+  __Sp.Def_:
+  <input type="text" name="sp_def">
+  <br><br>
+  __Speed__:
+  <input type="text" name="speed">
+  <br><br>
+  Generation:
+  <input type="text" name="generation">
+  <br><br>
+    
+  <input type="submit" value="Predict">
+</form>
+
+</body>
+</html>
